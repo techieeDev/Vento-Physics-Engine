@@ -1,5 +1,5 @@
 #pragma once
-#include"3DVector.h"
+#include"Geometry/3DVector.h"
 using namespace Ivectors;
 
 class Object

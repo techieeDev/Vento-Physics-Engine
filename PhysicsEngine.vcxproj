@@ -130,8 +130,8 @@
     <ClCompile Include="program.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="3DVector.h" />
-    <ClInclude Include="IOEngine.h" />
+    <ClInclude Include="Geometry\3DVector.h" />
+    <ClInclude Include="EngineIO.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="RealtimeCycle.h" />
   </ItemGroup>

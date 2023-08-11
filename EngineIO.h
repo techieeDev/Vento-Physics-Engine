@@ -1,7 +1,7 @@
 #pragma once
 #include<iostream>
 
-namespace IOEngine
+namespace EngineIO
 {
 	template<typename T>
 	void DebugLine(T message) {

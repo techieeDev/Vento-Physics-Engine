@@ -1,12 +1,12 @@
 #include <iostream>
 #include "RealtimeCycle.h"
-#include "3DVector.h"
+#include "Geometry/3DVector.h"
 #include "Object.h"
-#include"IOEngine.h"
+#include"EngineIO.h"
 
 using std::endl;
 using std::cout;
-using namespace IOEngine;
+using namespace EngineIO;
 RealtimeCycle cycle;
 
 int main()

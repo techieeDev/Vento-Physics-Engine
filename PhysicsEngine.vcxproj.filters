@@ -26,10 +26,10 @@
     <ClInclude Include="Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="3DVector.h">
+    <ClInclude Include="EngineIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IOEngine.h">
+    <ClInclude Include="Geometry\3DVector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
