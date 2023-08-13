@@ -10,9 +10,11 @@ using std::string;
 
 namespace Ivectors
 {
-	struct _3DVector {
+	class _3DVector {
 
 	public:
+		 _3DVector(float _x, float _y, float _z) : x(_x), y(_y), z(_z) {}
+
 		float x;
 		float y;
 		float z;
@@ -22,7 +24,8 @@ namespace Ivectors
 			return vector<float> {x, y, z};
 		}
 
-		void SetComponents(float _x, float _y, float _z)
+		// Modify the vector's components
+		 void SetComponents(float _x, float _y, float _z)
 		{
 			x = _x;
 			y = _y;
@@ -36,12 +39,14 @@ namespace Ivectors
 			z += additionVec.z;
 		}
 
+		// Multiply by number
 		void MultiplyBy(float _multiplier) {
 			x *= _multiplier;
 			y *= _multiplier;
 			z *= _multiplier;
 		}
 
+		// Multiply by vector
 		void MultiplyBy(_3DVector multiplierVec)
 		{
 			x *= multiplierVec.x;
@@ -49,11 +54,19 @@ namespace Ivectors
 			z *= multiplierVec.z;
 		}
 
+		// Divide by number
+		void DivideBy(float divider) {
+			x /= divider;
+			y /= divider;
+			z /= divider;
+		}
+
 		float GetMagnitude() {
 			float sum = pow(x, 2) + pow(y, 2) + pow(z, 2);
 			return sqrt(sum);
 		}
 
+		// Logs vector's components to the console
 		void DisplayComponents()
 		{
 			string info = "x: " + std::to_string(x) + "; " + "y: " + std::to_string(y) + "; " + "z: " + std::to_string(z);
@@ -61,10 +74,5 @@ namespace Ivectors
 		}
 	};
 
-	_3DVector Instantiate(float x, float y, float z)
-	{
-		_3DVector vec3D;
-		vec3D.SetComponents(x, y, z);
-		return vec3D;
-	};
+
 }

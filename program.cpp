@@ -1,8 +1,10 @@
 #include <iostream>
-#include "RealtimeCycle.h"
+#include "Core/RealtimeCycle.h"
+#include "Core/Object.h"
 #include "Geometry/3DVector.h"
-#include "Object.h"
-#include"EngineIO.h"
+#include "Tools/EngineIO.h"
+	
+const _3DVector _FIXED_FORCE_01 = _3DVector(7.5f, 0.5f, 14);
 
 using std::endl;
 using std::cout;
@@ -15,15 +17,13 @@ int main()
 
 	// ~ Object Settings
 	Object Cube;
-	_3DVector direction;
-	float CubeSpeed = 0.72;
+	Cube.Mass = 50;
 
 	while (true)
 	{
-		direction = Instantiate(1, 0, 0);
-		direction.MultiplyBy(CubeSpeed * cycle.GetDeltaTime());
-		Cube.Translate(direction);
-		Cube.WorldPosition.DisplayComponents();
+		float deltaTime = cycle.GetDeltaTime();
+		Cube.AddTranslationForce(_FIXED_FORCE_01, deltaTime);
+		Cube.Acceleration.DisplayComponents();
 		cycle.RenderFrame();
 	}
 	return 0;

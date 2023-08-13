@@ -20,16 +20,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RealtimeCycle.h">
+    <ClInclude Include="Core\RealtimeCycle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h">
+    <ClInclude Include="Core\Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EngineIO.h">
+    <ClInclude Include="Tools\EngineIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Geometry\3DVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ObjectMechanics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

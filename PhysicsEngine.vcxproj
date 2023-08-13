@@ -130,10 +130,11 @@
     <ClCompile Include="program.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Core\ObjectMechanics.h" />
     <ClInclude Include="Geometry\3DVector.h" />
-    <ClInclude Include="EngineIO.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="RealtimeCycle.h" />
+    <ClInclude Include="Tools\EngineIO.h" />
+    <ClInclude Include="Core\Object.h" />
+    <ClInclude Include="Core\RealtimeCycle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
