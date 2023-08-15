@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\ObjectMechanics.h" />
+    <ClInclude Include="Core\Process.h" />
     <ClInclude Include="Geometry\3DVector.h" />
     <ClInclude Include="Tools\EngineIO.h" />
     <ClInclude Include="Core\Object.h" />

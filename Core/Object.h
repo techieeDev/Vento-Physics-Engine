@@ -23,10 +23,14 @@ public:
 	_3DVector WorldPosition = _3DVector(0, 0, 0);
 	
 	void Translate(_3DVector translationVec){
-		WorldPosition.AddBy(translationVec);
+		WorldPosition.AddBy(translationVec);	
 	}
 
 	// Object force property
+
+	void AddToRealtimeForces(_3DVector force) {
+		
+	}
 
 	void AddTranslationForce(_3DVector force, float dt)
 	{

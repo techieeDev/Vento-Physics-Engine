@@ -35,5 +35,8 @@
     <ClInclude Include="Core\ObjectMechanics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
